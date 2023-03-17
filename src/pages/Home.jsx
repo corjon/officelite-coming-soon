@@ -1,5 +1,6 @@
-import logo from './assets/shared/logo.svg';
-import charts from './assets/home/illustration-charts.svg';
+import { Link } from 'react-router-dom';
+import logo from '../assets/shared/logo.svg';
+import charts from '../assets/home/illustration-charts.svg';
 import SubscriptionPlan from '../components/SubscriptionPlan.jsx';
 import CountdownTimer from '../components/CountdownTimer.jsx';
 
@@ -15,7 +16,7 @@ export default function Home() {
 
           <p>Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new collaboration platform built with an intuitive interface to improve productivity.</p>
 
-          <a href="#">Get Started</a>
+          <Link to="/signup">Get Started</Link>
         </div>
       </div>
 
@@ -48,7 +49,7 @@ export default function Home() {
 
       <div>
         <CountdownTimer />
-        <a href="#">Get Started</a>
+        <Link to="/signup">Get Started</Link>
       </div>
     </main>
   );

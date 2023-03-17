@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function SubscriptionPlan(props) {
   return (
     <div>
@@ -11,7 +13,7 @@ export default function SubscriptionPlan(props) {
         <p>{props.storage}</p>
         <p>{props.feature2}</p>
       </div>
-      <a href="#">Try for Free</a>
+      <Link to="/signup">Try for Free</Link>
     </div>
   );
 }
