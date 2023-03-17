@@ -1,40 +1,55 @@
-A simple solution to complex tasks is coming soon
+import logo from './assets/shared/logo.svg';
+import charts from './assets/home/illustration-charts.svg';
+import SubscriptionPlan from '../components/SubscriptionPlan.jsx';
+import CountdownTimer from '../components/CountdownTimer.jsx';
 
-  Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new 
-  collaboration platform built with an intuitive interface to improve productivity.
+export default function Home() {
+  return (
+    <main>
+      <img src={logo} alt="officelite logo" />
 
-  Get Started
+      <div>
+        <img src={charts} alt="charts illustration" />
+        <div>
+          <h1>A simple solution to complex tasks is coming soon</h1>
 
-  Basic
-  Free
-  Up to 5 users for free
-  Basic document collaboration
-  2 gb storage
-  Great security and support
-  Try for Free
+          <p>Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new collaboration platform built with an intuitive interface to improve productivity.</p>
 
-  Pro
-  $9.99
-  Per user, billed monthly
-  All essential integrations
-  50 gb storage
-  More control and insights
-  Try for Free
+          <a href="#">Get Started</a>
+        </div>
+      </div>
 
-  Ultimate
-  $19.99
-  Per user, billed monthly
-  Robust work management
-  100 gb storage
-  VIP support
-  Try for Free
+      <SubscriptionPlan
+        title="Basic"
+        price="Free"
+        numUsers="Up to 5 users for free"
+        feature1="Basic document collaboration"
+        storage="2 gb storage"
+        feature2="Great security and support"
+      />
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
+      <SubscriptionPlan
+          title="Pro"
+          price="$9.99"
+          numUsers="Per user, billed monthly"
+          feature1="All essential integrations"
+          storage="50 gb storage"
+          feature2="More control and insights"
+      />
 
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-  Get Started
+      <SubscriptionPlan
+          title="Ultimate"
+          price="$19.99"
+          numUsers="Per user, billed monthly"
+          feature1="Robust work management"
+          storage="100 gb storage"
+          feature2="VIP support"
+      />
+
+      <div>
+        <CountdownTimer />
+        <a href="#">Get Started</a>
+      </div>
+    </main>
+  );
+}
