@@ -1,0 +1,79 @@
+.planCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 53px;
+  background: #FFFFFF;
+  box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+  border-radius: 13px;
+}
+
+.planHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.planHeader h2 {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #333950;
+}
+
+.planHeader p:nth-child(2) {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  color: #333950;
+}
+
+.planHeader > p:nth-child(3) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #333950;
+}
+
+.planFeatures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.planFeatures p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #747B95;
+}
+
+.planFeatures p:first-child,
+.planFeatures p:nth-child(2) {
+  margin-bottom: 16px;
+}
+
+.planCard a {
+  display: inline-block;
+  padding: 14px 40px 14px 43px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #5175FF;
+  background-color: #E4EAFF;
+  border-radius: 28px;
+}
+
+.planCard.secondaryColors h2,
+.planCard.secondaryColors p {
+  color: #FFFFFF;
+}
+
+.secondaryColors a {
+  background-color: #FFFFFF;
+}
