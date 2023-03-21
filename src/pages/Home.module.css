@@ -1,4 +1,7 @@
 .homeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   padding-top: 46px;
   background-color: #FAFAFA;
@@ -17,14 +20,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
   padding-bottom: 894px;
 }
 
 .homeBanner > img {
   margin-bottom: 64px;
   width: 171px;
-  height: 192px;
+  height: auto;
 }
 
 .homeHeader {
@@ -45,6 +47,7 @@
 
 .homeHeader p {
   margin-bottom: 24px;
+  max-width: 615px;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -85,15 +88,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   padding: 894px 24px 100px 23px;
   background-color: #25293A;
   background-image: url("../assets/home/bg-pattern-footer.svg");
-  background-size: 850px auto;
+  background-size: 1202px auto;
   background-repeat: no-repeat;
-  background-position: center 332px;
+  background-position: center 156px;
 }
 
-.countdownSection > p {
+.comingSoon {
   margin-bottom: 18px;
   font-weight: 700;
   font-size: 16px;
@@ -113,9 +117,130 @@
 
 
 @media screen and (min-width: 768px) {
+  .homeContent {
+    padding-top: 72px;
+    background-size: 666px auto;
+    background-position: 395px -164px;
+  }
+
+  .homeContent > img {
+    align-self: flex-start;
+    margin: 0 0 104px 39px;
+  }
+
+  .homeBanner {
+    flex-direction: row-reverse;
+    gap: 63px;
+    padding: 0 39px 638px;
+  }
+
+  .homeBanner > img {
+    margin-bottom: 0;
+    width: 281px;
+    height: auto;
+  }
+
+  .homeHeader {
+    align-items: flex-start;
+    padding: 0;
+    max-width: 340px;
+  }
+
+  .homeHeader h1,
+  .homeHeader p {
+    text-align: left;
+  }
+
+  .subscriptionSection {
+    top: 698px;
+    padding: 0 39px;
+  }
+
+  .subscriptionSection > :first-child,
+  .subscriptionSection > :nth-child(2) {
+    margin-bottom: 24px;
+  }
+
+  .countdownSection {
+    padding: 598px 39px 100px;
+    background-size: 1454px auto;
+    background-position: center top;
+  }
+
+  .comingSoon {
+    margin-bottom: 8px;
+  }
+
+  .countdownSection .btn {
+    margin-top: 48px;
+  }
 
 }
 
 @media screen and (min-width: 1440px) {
+  .homeContent {
+    padding-top: 81px;
+    background-size: 1134px auto;
+    background-position: 656px -419px;
+  }
 
+  .homeContent > img {
+    margin: 0 0 174px 165px;
+  }
+
+  .homeBanner {
+    gap: 95px;
+    padding: 0 165px 378px;
+  }
+
+  .homeBanner > img {
+    width: 475px;
+    height: auto;
+  }
+
+  .homeHeader {
+    max-width: 537px;
+  }
+
+  .homeHeader h1 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+
+  .homeHeader p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .btn:hover {
+    background-color: #829CFF;
+  }
+
+  .subscriptionSection {
+    display: flex;
+    gap: 30px;
+    top: 928px;
+    padding: 0 165px;
+  }
+
+  .subscriptionSection > :first-child,
+  .subscriptionSection > :nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .countdownSection {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 336px 165px 91px;
+    background-size: 2036px auto;
+    background-position: -702px -614px;
+  }
+
+  .comingSoon {
+    margin-bottom: 0;
+  }
+
+  .countdownSection .btn {
+    margin-top: 0;
+  }
 }

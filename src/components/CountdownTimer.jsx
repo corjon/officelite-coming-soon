@@ -1,6 +1,8 @@
+import styles from './CountdownTimer.module.css';
+
 export default function CountdownTimer() {
   return (
-    <div>
+    <div className={styles.timer}>
       <div>
         <p>47</p> 
         <p>Days</p>

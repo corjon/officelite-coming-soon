@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 40px 53px;
+  max-width: 689px;
   background: #FFFFFF;
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   border-radius: 13px;
@@ -69,6 +70,12 @@
   border-radius: 28px;
 }
 
+.planCard.secondaryColors {
+  background-image: url("../assets/home/bg-pattern-pricing.svg");
+  background-position: center -379px;
+  background-repeat: no-repeat;
+}
+
 .planCard.secondaryColors h2,
 .planCard.secondaryColors p {
   color: #FFFFFF;
@@ -76,4 +83,78 @@
 
 .secondaryColors a {
   background-color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .planCard {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 48px 68px 48px 48px;
+  }
+
+  .planHeader {
+    align-items: flex-start;
+    margin: 0 192px 24px 0;
+  }
+
+  .planHeader h2 {
+    margin-bottom: 16px;
+  }
+
+  .planHeader p:nth-child(2) {
+    margin-bottom: 4px;
+  }
+
+  .planFeatures {
+    align-self: flex-end;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .planCard.secondaryColors {
+    background-position: -319px -282px;
+    background-repeat: no-repeat;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  .planCard {
+    flex-direction: column;
+    width: 350px;
+    padding: 40px 64px 40px 65px;
+  }
+
+  .planHeader {
+    align-items: center;
+    margin: 0;
+    margin-bottom: 56px;
+  }
+
+  .planHeader h2 {
+    margin-bottom: 40px;
+  }
+
+  .planHeader p:nth-child(2) {
+    margin-bottom: 8px;
+  }
+
+  .planFeatures {
+    align-self: center;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .planCard a:hover {
+    background-color: #C2CFFF;
+  }
+
+  .planCard.secondaryColors {
+    background-position: -265px -379px;
+  }
+
+  .planCard.secondaryColors a:hover {
+    background-color: #FFFFFF;
+    color: #829CFF;
+  }
 }

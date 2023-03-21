@@ -1,0 +1,55 @@
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 13.5px;
+  width: 100%;
+}
+
+.timer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 92px;
+  background-color: #333950;
+  border-radius: 4px;
+}
+
+.timer div p:first-child {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.timer div p:nth-child(2) {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 28px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+  .timer {
+    gap: 16px;
+  }
+
+  .timer div {
+    width: 100px;
+    height: 128px;
+    border-radius: 13px;
+  }
+
+  .timer div p:first-child {
+    font-size: 56px;
+  }
+
+  .timer div p:nth-child(2) {
+    font-size: 16px;
+  }
+}

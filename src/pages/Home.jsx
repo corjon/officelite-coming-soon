@@ -52,8 +52,10 @@ export default function Home() {
       </div>
 
       <div className={styles.countdownSection}>
-        <p>Coming <span>4 Nov 2020</span></p>
-        <CountdownTimer />
+        <div>
+          <p className={styles.comingSoon}>Coming <span>4 Nov 2020</span></p>
+          <CountdownTimer />
+        </div>
         <Link to="/signup" className={styles.btn}>Get Started</Link>
       </div>
     </main>
