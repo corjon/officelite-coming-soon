@@ -97,7 +97,7 @@
   background-position: center 156px;
 }
 
-.comingSoon {
+/* .comingSoon {
   margin-bottom: 18px;
   font-weight: 700;
   font-size: 16px;
@@ -109,7 +109,7 @@
 
 .countdownSection span {
   color: #5175FF;
-}
+} */
 
 .countdownSection .btn {
   margin-top: 40px;
@@ -167,9 +167,9 @@
     background-position: center top;
   }
 
-  .comingSoon {
+  /* .comingSoon {
     margin-bottom: 8px;
-  }
+  } */
 
   .countdownSection .btn {
     margin-top: 48px;
