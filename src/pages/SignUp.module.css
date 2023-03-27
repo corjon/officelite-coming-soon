@@ -1,0 +1,43 @@
+.signUpContent {
+  padding-top: 46px;
+  background-image: url("../assets/home/bg-pattern-header.svg");
+  background-size: 458px auto;
+  background-repeat: no-repeat;
+  background-position: center -170px;
+  background-color: #FAFAFA;
+}
+
+.signUpContent > img {
+  margin: 0 auto 80px;
+}
+
+.signUpBanner {
+  margin-bottom: 296px;
+  padding: 0 24px;
+}
+
+.signUpBanner h1 {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #333950;
+}
+
+.signUpBanner > p {
+  margin-bottom: 64px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #747B95;
+}
+
+.signUpSection {
+  background-color: #25293A;
+  background-image: url("../assets/home/bg-pattern-footer.svg");
+  background-size: 486px auto;
+  background-position: center -50px;
+  height: 375px;
+}
