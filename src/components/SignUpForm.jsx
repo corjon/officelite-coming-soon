@@ -1,6 +1,8 @@
+import styles from './SignUpForm.module.css';
+
 export default function SignUpForm() {
   return (
-    <form>
+    <form className={styles.form}>
       <input type="text" name="name" aria-label="Name" placeholder="Name"></input>
       <input type="text" name="email" aria-label="Email Address" placeholder="Email Address"></input>
       <select name="plan" aria-label="Select a plan">
