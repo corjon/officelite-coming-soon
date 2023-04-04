@@ -11,13 +11,18 @@
     font-size: 16px;
     line-height: 48px;
     letter-spacing: 5px;
-    text-transform: uppercase;  
+    text-transform: uppercase;
+    text-align: center;
     color: #FFFFFF;
-  }
+}
+
+.timerSignUpPage .comingSoon {
+  color: #333950;
+}
   
-  .comingSoon span {
+.comingSoon span {
     color: #5175FF;
-  }
+}
 
 .timer div {
   display: flex;
@@ -30,6 +35,10 @@
   border-radius: 4px;
 }
 
+.timerSignUpPage .timer div {
+  background-color: #E9EDFB;
+}
+
 .timer div p:first-child {
   display: flex;
   align-items: flex-end;
@@ -39,11 +48,21 @@
   color: #FFFFFF;
 }
 
+.timerSignUpPage .timer div p:first-child {
+  color: #5175FF;
+}
+
 .timer div p:nth-child(2) {
   font-weight: 700;
   font-size: 12px;
   line-height: 28px;
   color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.timerSignUpPage div p:nth-child(2) {
+  color: #333950;
   mix-blend-mode: normal;
   opacity: 0.5;
 }

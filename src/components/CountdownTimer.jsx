@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import styles from './CountdownTimer.module.css';
 
-export default function CountdownTimer() {
+export default function CountdownTimer({ currentPage }) {
+
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   
   const targetDate = new Date();
@@ -26,7 +27,7 @@ export default function CountdownTimer() {
   }, []);
 
   return (
-    <div>
+    <div className={styles[currentPage]}>
       <p className={styles.comingSoon}>Coming <span>{targetDateString}</span></p>
       <div className={styles.timer}>
         <div>

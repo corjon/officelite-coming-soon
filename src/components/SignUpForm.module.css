@@ -1,7 +1,12 @@
 .form {
   display: flex;
   flex-direction: column;
+  gap: 24px;
+  position: absolute;
+  top: -232px;
+  margin: 0 24px;
   padding: 24px;
+  min-width: 327px;
   background-color: #FFFFFF;
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   border-radius: 13px;
@@ -9,10 +14,14 @@
 
 .form input,
 .form select {
-  margin-bottom: 24px;
+  height: 45px;
   padding: 0 0 17px 16px;
   border: none;
   border-bottom: 1px solid #BABDCA;
+}
+
+.form input {
+  padding-top: 2px;
 }
 
 .form input::placeholder {

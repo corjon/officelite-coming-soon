@@ -35,9 +35,10 @@
 }
 
 .signUpSection {
+  position: relative;
   background-color: #25293A;
   background-image: url("../assets/home/bg-pattern-footer.svg");
   background-size: 486px auto;
   background-position: center -50px;
-  height: 375px;
+  height: 320px;
 }
