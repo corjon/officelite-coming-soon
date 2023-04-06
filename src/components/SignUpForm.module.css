@@ -4,7 +4,8 @@
   gap: 24px;
   position: absolute;
   top: -232px;
-  margin: 0 24px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 24px;
   min-width: 327px;
   background-color: #FFFFFF;
@@ -50,4 +51,12 @@
   background-color: #5175FF;
   border: none;
   border-radius: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    top: -254px;
+    padding: 40px 43px 51px;
+    min-width: 445px;
+  }
 }

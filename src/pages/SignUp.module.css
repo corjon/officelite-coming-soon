@@ -38,7 +38,43 @@
   position: relative;
   background-color: #25293A;
   background-image: url("../assets/home/bg-pattern-footer.svg");
+  background-repeat: no-repeat;
   background-size: 486px auto;
   background-position: center -50px;
   height: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  .signUpContent {
+    padding-top: 72px;
+    background-image: none;
+    background-color: #FAFAFA;
+  }
+
+  .signUpContent > img {
+    margin: 0 39px 104px;
+  }
+
+  .signUpBanner {
+    margin-bottom: 358px;
+    padding: 0 98px;
+  }
+
+  .signUpBanner h1 {
+    margin-bottom: 24px;
+  }
+
+  .signUpBanner > p {
+    margin-bottom: 40px;
+  }
+
+  .signUpSection {
+    position: relative;
+    background-color: #25293A;
+    background-image: url("../assets/sign-up/bg-pattern-side.svg");
+    background-size: auto;
+    background-position: center center;
+    height: 380px;
+  }
+
 }
