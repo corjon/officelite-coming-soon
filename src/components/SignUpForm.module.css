@@ -60,3 +60,10 @@
     min-width: 445px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .form {
+    top: 156px;
+    left: 16px;
+  }
+}

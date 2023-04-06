@@ -95,4 +95,13 @@
   .comingSoon {
     margin-bottom: 0;
   }
+
+  .timerSignUpPage .timer {
+    justify-content: flex-start;
+  }
+
+  .timerSignUpPage .comingSoon {
+    margin-bottom: 8px;
+    text-align: left;
+  }
 }

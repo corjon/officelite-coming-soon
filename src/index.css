@@ -5,6 +5,10 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+body {
+  min-height: 100vh;
+}
+
 img {
   display: block;
   max-width: 100%;
