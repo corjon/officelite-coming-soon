@@ -7,7 +7,7 @@
   background-color: #FAFAFA;
 }
 
-.signUpContent > img {
+.signUpBanner > img {
   margin: 0 auto 80px;
 }
 
@@ -51,8 +51,8 @@
     background-color: #FAFAFA;
   }
 
-  .signUpContent > img {
-    margin: 0 39px 104px;
+  .signUpBanner > img {
+    margin: 0 0 104px -59px;
   }
 
   .signUpBanner {
@@ -76,5 +76,9 @@
     background-position: center center;
     height: 380px;
   }
+
+}
+
+@media screen and (min-width: 1440px) {
 
 }
