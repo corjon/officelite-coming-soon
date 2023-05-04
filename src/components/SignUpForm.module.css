@@ -56,6 +56,11 @@
   border-radius: 28px;
 }
 
+.form button:hover {
+  cursor: pointer;
+  background: #829CFF;
+}
+
 @media screen and (min-width: 768px) {
   .form {
     top: -254px;
