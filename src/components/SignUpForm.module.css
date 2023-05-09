@@ -24,6 +24,11 @@
   border-bottom: 1px solid #BABDCA;
 }
 
+.form input.inputError {
+  color: #F05B5B;
+  border-bottom-color: #F05B5B;
+}
+
 .form input {
   padding-top: 2px;
 }
@@ -33,6 +38,10 @@
   font-size: 16px;
   line-height: 28px;
   color: #BABDCA;
+}
+
+.form input.inputError::placeholder {
+  color: #F05B5B;
 }
 
 .form select {
