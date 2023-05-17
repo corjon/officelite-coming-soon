@@ -45,11 +45,18 @@
 }
 
 .form select {
-  appearance: none;
+  /* appearance: none; */
   font-weight: 700;
   font-size: 16px;
   line-height: 28px;
   color: #333950;
+}
+
+.price {
+  color: #333950;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  border: 1px solid green;
 }
 
 .form button {
