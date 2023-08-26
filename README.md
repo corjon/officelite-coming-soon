@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/coming-soon-site-aO_FO6ZOcL)
 - Live Site URL: [Netlify site](https://majestic-profiterole-56030f.netlify.app/)
 
 ## My process
